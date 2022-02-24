@@ -1,0 +1,20 @@
+[package]
+name = "micro-client"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[[bin]] # Bin to run the HelloWorld gRPC client
+name = "user-client"
+path = "src/client.rs"
+
+[dependencies]
+prost = "0.9"
+tokio = {version = "1.0", features = ["macros", "rt-multi-thread"]}
+tonic = "0.6"
+micro-server = {path = "../micro-server"}
+tonic-example = {git = "https://github.com/wuyedebianhua/tonic-example"}
+
+[build-dependencies]
+tonic-build = "0.6"
