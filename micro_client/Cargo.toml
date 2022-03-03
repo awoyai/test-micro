@@ -1,5 +1,5 @@
 [package]
-name = "micro-client"
+name = "micro_client"
 version = "0.1.0"
 edition = "2021"
 
@@ -13,7 +13,7 @@ path = "src/client.rs"
 prost = "0.9"
 tokio = {version = "1.0", features = ["macros", "rt-multi-thread"]}
 tonic = "0.6"
-micro-server = {path = "../micro-server"}
+micro-server = {path = "../micro_server"}
 tonic-example = {git = "https://github.com/wuyedebianhua/tonic-example"}
 
 [build-dependencies]

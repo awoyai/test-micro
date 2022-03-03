@@ -331,7 +331,17 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "308cc39be01b73d0d18f82a0e7b2a3df85245f84af96fdddc5d202d27e47b86a"
 
 [[package]]
-name = "micro-client"
+name = "micro-server"
+version = "0.1.0"
+dependencies = [
+ "prost",
+ "tokio",
+ "tonic",
+ "tonic-build",
+]
+
+[[package]]
+name = "micro_client"
 version = "0.1.0"
 dependencies = [
  "micro-server",
@@ -340,16 +350,6 @@ dependencies = [
  "tonic",
  "tonic-build",
  "tonic-example",
-]
-
-[[package]]
-name = "micro-server"
-version = "0.1.0"
-dependencies = [
- "prost",
- "tokio",
- "tonic",
- "tonic-build",
 ]
 
 [[package]]

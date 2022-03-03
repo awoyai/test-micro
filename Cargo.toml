@@ -1,2 +1,2 @@
 [workspace]
-members = ["micro-client", "micro-server"]
+members = ["micro_client", "micro_server"]
